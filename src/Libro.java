@@ -52,4 +52,16 @@ public class Libro {
 
         return sb.toString();
     }
+
+    public boolean updateNumPaginas(int numPaginas) {
+        boolean resultado;
+
+        if(numPaginas <= 0){
+            resultado = false;
+        } else{
+            this.numPaginas = numPaginas;
+            resultado = true;
+        }
+        return resultado;
+    }
 }
